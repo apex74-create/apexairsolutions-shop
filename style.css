@@ -134,3 +134,38 @@ table.rates th{background:rgba(200,16,46,.85);color:#fff;letter-spacing:.05em}
 footer{margin-top:20px;text-align:center;color:#d8d3c8;font-size:13.5px;line-height:1.6;padding:0 10px}
 footer .brandline{font-family:Verdana,Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;font-size:11.5px;color:#fff}
 footer a{color:#ffb3ba}
+/* ---- ART PASS (Nov 12, 2026): real product art, icon board, mini library ----
+   Palette discipline: art sits whole on the solid ink ground of its frame —
+   no overlays, no filters, no translucency over product art. Tones are the
+   palette's own: ink frame, crimson rule on featured pieces. */
+section.sheet[id]{scroll-margin-top:14px}
+.tile{position:relative}
+.art{
+  display:block;margin:-14px -14px 8px;overflow:hidden;
+  background:#0b0d10;border-bottom:1px solid var(--line);
+  border-radius:10px 10px 0 0;aspect-ratio:16/10;
+}
+.art img{width:100%;height:100%;object-fit:cover;display:block}
+.art.top img{object-position:top center}
+.art.contain{background:#0b0d10}
+.art.contain img{object-fit:contain;padding:12px}
+a.art{text-decoration:none}
+.tile .art.square{aspect-ratio:1/1}
+.board-head.sub{margin-top:10px}
+.board-head.sub h3{font-size:19px;margin:0}
+.rail.featured .tile{border-top:4px solid var(--crimson)}
+@media(max-width:759px){ .rail.featured .tile{flex-basis:92%} }
+.lib-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(158px,1fr));gap:12px}
+.lib-item{background:#fff;border:1px solid var(--line);border-top:3px solid var(--ink);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.lib-item img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;background:#0b0d10}
+.lib-item .pad{padding:8px 10px 10px;display:flex;flex-direction:column;gap:5px;flex:1}
+.lib-item h4{margin:0;font-size:14.5px;line-height:1.25}
+.lib-item .meta{display:flex;align-items:center;justify-content:space-between;font-family:Verdana,Arial,sans-serif;font-weight:bold;font-size:13px}
+.lib-item .live{margin:auto 0 0;font-size:12.5px}
+.lib-item .live a{color:var(--crimson);font-weight:bold}
+.badge.sm{font-size:9.5px;padding:2px 6px}
+.icon-mark{display:block;width:84px;height:84px;margin:2px auto 10px;border-radius:18px;box-shadow:0 8px 22px rgba(0,0,0,.35)}
+.icon-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(106px,1fr));gap:12px}
+.icon-cell{margin:0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:10px 8px 8px;text-align:center}
+.icon-cell img{width:72px;height:72px;object-fit:contain;display:block;margin:0 auto 6px}
+.icon-cell figcaption{font-family:Verdana,Arial,sans-serif;font-size:10.5px;line-height:1.3;color:#333}

@@ -15,6 +15,12 @@ Nov 12, 2026). Vanilla HTML/CSS/JS. No framework, no build step, no dependencies
   glass sliding boards, floating PLACE YOUR AD HERE tile, bottom no-fly zone).
 - `site.js` — the property config (the rename seam) + rail rendering of brand strings.
 - `sitemap.xml`, `robots.txt` — SEO basics, estate pattern.
+- `art/` — the products' own art, added in the art pass (Nov 12, 2026): `art/faces/`
+  holds direct captures of the fifteen real depot faces; `art/products/` holds the
+  products' own hero graphics, store screenshots, and build captures; `art/icons/`
+  holds the real icon files the products ship with (the nineteen-icon board, plus the
+  universal launcher mark). Provenance for every file is recorded in the build report's
+  art-pass section. No stock imagery is used anywhere on the property.
 
 ## Self-containment (the visibility basis)
 This repository contains only this property's own static pages. It holds NO house
